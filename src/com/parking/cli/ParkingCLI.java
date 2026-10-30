@@ -1,6 +1,11 @@
 package com.parking.cli;
-import java.util.*;import java.time.*;
-import com.parking.model.*;import com.parking.repository.*;import com.parking.service.*;
+
+import java.util.*;
+import java.time.*;
+
+import com.parking.model.*;
+import com.parking.repository.ParkingRepository;
+import com.parking.service.ParkingService;
 public class ParkingCLI {
  private Scanner sc=new Scanner(System.in);private ParkingRepository repo=new ParkingRepository();private ParkingService service=new ParkingService(repo);
  public void start(){while(true){
